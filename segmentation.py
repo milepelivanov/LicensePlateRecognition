@@ -5,7 +5,7 @@ from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 import os
 
-image = cv2.imread("detected_plate.jpg")  # Replace with the path to your image
+image = cv2.imread("detected_plate.jpg")
 output_folder = 'letters'
 
 
