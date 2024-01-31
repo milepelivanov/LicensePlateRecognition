@@ -55,7 +55,6 @@ def get_plate(image_path, Dmax=608, Dmin=608):
 def save_image(image, save_path):
     image_8u = np.clip(image * 255, 0, 255).astype(np.uint8)
 
-    # Save the image
     cv2.imwrite(save_path, cv2.cvtColor(image_8u, cv2.COLOR_RGB2BGR))
     print(f"Image saved to: {save_path}")
 
