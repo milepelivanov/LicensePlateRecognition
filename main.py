@@ -103,7 +103,6 @@ save_image(LpImg[0], "detected_plate.jpg")
 # scores = output_layers[0][0, 0, :, :]
 # geometry = output_layers[0][0, 1:5, :, :]
 # else:
-# Adjust the indexing based on the actual structure of output_layers[0]
 # print("Unexpected output_layers[0] structure. Adjust the indexing.")
 
 # print("Output Layers Shape:", output_layers[0].shape)
@@ -178,14 +177,10 @@ save_image(LpImg[0], "detected_plate.jpg")
 
 # ---------------------
 
-#
-
 
 # reader = easyocr.Reader(['en'])
 
-# Read text from an image
 # result = reader.readtext('detected_plate.jpg')
 
-# Print the result
 # for detection in result:
 #    print(detection[1])
